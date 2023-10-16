@@ -5,8 +5,8 @@ import { instrument } from "@socket.io/admin-ui";
 import {toRoom, toHall, setName, leaveRoom, leaveHall} from "./handlers/rooms.js";
 
 const httpsServer = https.createServer({
-    key: fs.readFileSync("/root/v2ray.key"),
-    cert: fs.readFileSync("/root/v2ray.pem")
+    key: fs.readFileSync("/home/yanxu/ws/yanxu.site.key"),
+    cert: fs.readFileSync("/home/yanxu/ws/yanxu.site.pem")
 })
 const io = new Server(httpsServer, {
     cors: {
